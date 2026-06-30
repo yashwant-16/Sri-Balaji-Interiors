@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-ivory text-charcoal font-lato antialiased scroll-smooth;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-playfair font-medium;
+  }
+}
+
+/* Custom CSS Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-blush;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-mauve rounded;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gold;
+}
+
+/* Swiper custom styles */
+.swiper-pagination-bullet-active {
+  background: #C9A065 !important;
+}
+
+/* Before After slider custom styling */
+.before-after-slider {
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+}
+
+/* Lightbox customizations */
+.yarl__container {
+  background-color: rgba(44, 44, 44, 0.95) !important;
+}
+
+
+/* Image Hover Zoom */
+.img-zoom-wrap {
+  overflow: hidden;
+  border-radius: 12px;
+  position: relative;
+}
+.img-zoom-wrap img {
+  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+.img-zoom-wrap:hover img {
+  transform: scale(1.08);
+}
+
+
+
+
+.preloader-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+  background: #0D0A07;
+}
+@media (max-width: 768px) {
+  .preloader-video {
+    object-fit: contain;
+  }
+}
+
+/* Global transitions for links and buttons */
+a, button {
+  transition: all 0.25s ease !important;
+}
+
+/* Standard section padding */
+.section-padding {
+  padding: clamp(60px, 8vw, 100px) 5%;
+}
+
+/* Section label standard */
+.section-label {
+  font-family: 'Lato', sans-serif;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #C9A065;
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+/* Section heading standard */
+.section-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 700;
+  color: #2C2C2C;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+/* Gold divider */
+.gold-divider {
+  width: 56px;
+  height: 2px;
+  background: linear-gradient(90deg, #C9A065, #E8C99A);
+  margin: 16px auto 40px;
+  border: none;
+}
+.gold-divider.left {
+  margin-left: 0;
+}
+
+/* Contact Page form fields custom styles */
+.contact-input {
+  border: 1px solid #E0D8CE;
+  padding: 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #FFFFFF;
+  transition: all 0.25s ease;
+  color: #2C2C2C;
+  width: 100%;
+}
+.contact-input:focus {
+  outline: none !important;
+  border-color: #C9A065 !important;
+  box-shadow: 0 0 0 3px rgba(201, 160, 101, 0.12) !important;
+}
+.contact-input.error {
+  border-color: #EF4444 !important;
+  background-color: rgba(239, 68, 68, 0.03) !important;
+}
+
+/* Instagram Hover Transitions */
+.insta-overlay {
+  opacity: 0;
+}
+a:hover .insta-overlay {
+  opacity: 1 !important;
+}
+a:hover img {
+  transform: scale(1.06);
+}
+
+.filter-bar::-webkit-scrollbar {
+  display: none;
+}
+
+
