@@ -340,7 +340,7 @@ ${formData.email ? `*Email:* ${formData.email}\n` : ''}${formData.city ? `*City/
                   fontStyle: 'italic', fontSize: '13px',
                   color: '#C9A065', marginTop: '12px'
                 }}>
-                  || Sri Venkatesaya Namaha ||
+                  || Om Namo Venkateshaya Namaha ||
                 </p>
               </div>
             )}

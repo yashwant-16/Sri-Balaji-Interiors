@@ -3,8 +3,8 @@ import React from 'react';
 const BalajiBanner = () => {
   return (
     <div id="balaji-banner-wrapper" style={{ position: 'relative' }}>
-      <div 
-        id="balaji-banner" 
+      <div
+        id="balaji-banner"
         className="w-full py-2 px-4 flex flex-col items-center justify-center select-none"
         style={{
           position: 'relative',  // normal flow, scrolls away
@@ -22,10 +22,10 @@ const BalajiBanner = () => {
 
           {/* Deity Avatar Frame */}
           <div className="w-20 h-20 rounded-full border-2 border-gold overflow-hidden bg-white shadow-sm flex items-center justify-center" title="Lord Balaji">
-            <img 
-              src="/images/lord-balaji-deity.jpg" 
-              alt="Lord Balaji" 
-              loading="lazy" 
+            <img
+              src="/images/lord-balaji-deity.jpg"
+              alt="Lord Balaji"
+              loading="lazy"
               className="w-full h-full object-cover"
             />
           </div>
@@ -36,7 +36,7 @@ const BalajiBanner = () => {
           </svg>
         </div>
         <div className="mt-1 font-cormorant italic font-semibold text-gold tracking-widest text-sm md:text-base">
-          || Sri Venkatesaya Namaha ||
+          || Om Namo Venkateshaya Namaha ||
         </div>
       </div>
     </div>
