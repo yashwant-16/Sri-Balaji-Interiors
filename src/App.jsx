@@ -53,7 +53,7 @@ function App() {
               className="flex flex-col flex-grow"
               style={{ display: 'flex', flexDirection: 'column', flexGrow: 1 }}
             >
-              <main className="flex-grow" style={{ paddingTop: '72px' }}>
+              <main className="flex-grow">
                 <Routes>
                   <Route path="/" element={<Home />} />
                   <Route path="/about" element={<About />} />
