@@ -36,7 +36,7 @@ const projectTours = [
     location: "Hyderabad",
     description: "As placeholders, these are some of the images of the work done before for our clients.",
     roomImage: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1200&q=90",
-    videoId: "2Vv-cvyPILsStkY",   // REPLACE with client YouTube video ID
+    videoId: "cvyPILsStkY",   // REPLACE with client YouTube video ID
     category: "Residential · Full Home"
   }
 ];
